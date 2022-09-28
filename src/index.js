@@ -16,7 +16,7 @@ const tasks = [
     completed: false,
     index: 2,
   },
-]
+];
 
 const taskList = document.getElementById('todoList');
 
@@ -31,7 +31,7 @@ const newElement = (task) => {
   todo.classList.add('task-item');
   division.classList.add('form-container');
   button.classList.add('move-btn');
-  icon.classList.add('fa-solid','fa-ellipsis-vertical');
+  icon.classList.add('fa-solid', 'fa-ellipsis-vertical');
 
   todo.setAttribute('key', task.index);
   input.setAttribute('type', 'checkbox');
@@ -39,10 +39,9 @@ const newElement = (task) => {
   input.setAttribute('id', 'item1');
   label.setAttribute('for', 'item1');
   button.setAttribute('type', 'button');
-  
   if (task.completed) {
     input.checked = true;
-  };
+  }
 
   label.innerHTML = task.description;
 
@@ -52,12 +51,12 @@ const newElement = (task) => {
   todo.appendChild(division);
   todo.appendChild(button);
   taskList.appendChild(todo);
-}
+};
 
 const drowOnScreen = () => {
   const taskListItems = tasks.sort((a, b) => a.index - b.index);
   taskListItems.forEach((element) => {
-    newElement(element)
+    newElement(element);
   });
 };
 
