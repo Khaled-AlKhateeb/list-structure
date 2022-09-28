@@ -2,14 +2,14 @@
 
 # Project Name
 
-> Description the project.
+List structure
 
 
 ## Built With
 
-- Major languages
+- Major languages: HTML/ CSS/ JavaScript
 - Frameworks
-- Technologies used
+- Technolohies used: Linters/ webpack
 
 ## Live Demo (if available)
 
@@ -25,38 +25,38 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+HTML/ CSS/ JavaScript
 ### Setup
-
-### Install
+To get a local copy up and running, follow these steps:
+1. **Click "Code" button**
+2. Select preferred clone method and [**copy Repo URL**](https://github.com/Khaled-AlKhateeb/list-structure.git)
+3. **Open Git Bash** (or other terminal) and **enter "cd [Local Workstation Path]"**
+4. **Enter "git clone [Repo URL](https://github.com/Khaled-AlKhateeb/list-structure.git)"**
+5. **Enter "git checkout -b [New-Branch-Name]"**
 
 ### Usage
+To do list
 
 ### Run tests
+Linters
 
 ### Deployment
-
+Mobile, desktop browser
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Khaled Al-Khateeb**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Khaled-AlKhateeb)
+- Twitter: [@twitterhandle](https://twitter.com/KhaledA93751489)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/khaled-al-khateeb-3a1013247/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Khaled-AlKhateeb/list-structure/issues).
 
 ## Show your support
 
