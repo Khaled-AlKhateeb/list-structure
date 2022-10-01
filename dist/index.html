@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-    <script src="index.js"></script>
-<script defer src="index.bundle.js"></script></head>
-<body>
-    <h1>Hello webpack!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list structure</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+  <body>
+    <div class="main-container">
+      <section class="header">
+        <h1 class="title">Today's To Do</h1>
+        <button type="button" class="refresh-btn">
+          <i class="fa-solid fa-arrow-rotate-left"></i>
+        </button>
+      </section>
+      <form id="toDoForm" class="to-do-form">
+        <div class="form-input">
+          <input
+            id="addTask"
+            type="text"
+            class="task-input"
+            placeholder="Add to your list..."
+          />
+        </div>
+        <button type="button" id="addBtn" class="add-btn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </form>
+      <ul class="todo-list" id="todoList"></ul>
+      <div class="btn-container">
+        <button type="button" class="clear-btn">Clear all completed</button>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
 </html>
