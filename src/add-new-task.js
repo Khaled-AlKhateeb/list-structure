@@ -1,5 +1,5 @@
 import library from './library.js';
-import drowOnScreen from './drow-on-screen.js';
+import { drowOnScreen } from './drow-on-screen.js';
 
 const getInputValues = () => {
   const taskEntries = {

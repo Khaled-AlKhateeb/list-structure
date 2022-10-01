@@ -8,12 +8,12 @@ const removeItem = (e) => {
     const rmvBtn = removeTarget.children[1];
     rmvBtn.addEventListener('click', () => {
       removeTarget.remove();
-      library.remove(removeTarget.order);
+      library.remove(removeTarget.order - 1);
+      for (let i = 0; i < addTask.children.length + 1; i += 1) {
+        addTask.children[i].order = i + 1;
+        library.taskArr[i].index = i + 1;
+      }
     });
-    for (let i = 0; i < addTask.children.length; i += 1) {
-      addTask.children[i].order = i + 1;
-      library.task[i].index = i;
-    }
     window.localStorage.setItem('tasks', JSON.stringify(library.taskArr));
   }
 };

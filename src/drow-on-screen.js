@@ -32,9 +32,24 @@ const drowOnScreen = (task) => {
   for (let i = 0; i < addTask.children.length; i += 1) {
     addTask.children[i].order = i + 1;
     task.index = i + 1;
+    if (library.taskArr[i].completed) {
+      addTask.children[i].firstChild.firstChild.checked = true;
+    }
   }
 
   window.localStorage.setItem('tasks', JSON.stringify(library.taskArr));
 };
 
-export default drowOnScreen;
+const initializeTasks = () => {
+  const localStorageItem = window.localStorage.getItem('tasks');
+  if (localStorageItem) {
+    library.taskArr = JSON.parse(localStorageItem);
+    const addTask = document.getElementById('todoList');
+    addTask.innerHTML = '';
+    library.taskArr.forEach((element) => {
+      drowOnScreen(element);
+    });
+  }
+};
+
+export { drowOnScreen, initializeTasks };

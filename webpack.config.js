@@ -11,6 +11,10 @@ module.exports = {
     static: './dist',
     hot: true,
   },
+  performance: {
+    maxAssetSize: 5000000,
+    maxEntrypointSize: 5000000,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
