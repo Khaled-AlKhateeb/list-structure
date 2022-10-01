@@ -1,9 +1,9 @@
-import library from "./library.js";
-import drowOnScreen from "./drow-on-screen.js";
+import library from './library.js';
+import drowOnScreen from './drow-on-screen.js';
 
 const getInputValues = () => {
   const taskEntries = {
-    description: "",
+    description: '',
     completed: false,
     index: null,
   };
@@ -15,6 +15,6 @@ const getInputValues = () => {
   descriptionInput.value = '';
 
   drowOnScreen(taskEntries);
-}
+};
 
 export default getInputValues;

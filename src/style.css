@@ -50,9 +50,6 @@
 .task-input {
   border: none;
   outline: none;
-}
-
-.task-input {
   height: 100%;
   padding: 0.5rem;
   font-size: 1.1rem;

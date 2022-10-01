@@ -1,4 +1,4 @@
-import library from "./library.js";
+import library from './library.js';
 
 const drowOnScreen = (task) => {
   const addTask = document.getElementById('todoList');
@@ -29,13 +29,12 @@ const drowOnScreen = (task) => {
   todo.appendChild(button);
   addTask.appendChild(todo);
 
-  for (let i = 0; i < addTask.children.length; i++) {
+  for (let i = 0; i < addTask.children.length; i += 1) {
     addTask.children[i].order = i + 1;
     task.index = i + 1;
   }
 
   window.localStorage.setItem('tasks', JSON.stringify(library.taskArr));
-}
-
+};
 
 export default drowOnScreen;

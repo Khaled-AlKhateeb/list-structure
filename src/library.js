@@ -1,4 +1,4 @@
-class addTask {
+class AddTask {
   constructor() {
     this.taskArr = [];
     this.add = (obj) => {
@@ -10,5 +10,5 @@ class addTask {
   }
 }
 
-const library = new addTask();
+const library = new AddTask();
 export default library;
