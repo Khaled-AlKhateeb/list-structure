@@ -1,8 +1,8 @@
+import './style.css';
 import { selectedItem, editItem } from './selecteditems.js';
 import { removeItem } from './removeitem.js';
 import localStorageOnLoad from './localstorage.js';
 import getInputValues from './add-new-task.js';
-import './style.css';
 
 const addBtn = document.getElementById('addBtn');
 const todoList = document.getElementById('todoList');
