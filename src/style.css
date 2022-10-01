@@ -9,7 +9,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 2px 10px 10px lightgray;
+  box-shadow: 2px 10px 10px gray;
 }
 
 .header,
@@ -17,15 +17,26 @@
   height: 50px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem;
 }
 
 .refresh-btn,
 .add-btn,
-.move-btn {
+.rmv-btn {
   border: none;
   background-color: white;
   color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+}
+
+.refresh-btn:hover,
+.add-btn:hover,
+.rmv-btn:hover {
+  cursor: pointer;
 }
 
 .title {
@@ -33,41 +44,52 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 10px;
 }
 
 .task-input {
   border: none;
   outline: none;
-}
-
-.task-input {
   height: 100%;
   padding: 0.5rem;
   font-size: 1.1rem;
   font-style: italic;
+  background-color: transparent;
 }
 
 .todo-list {
   margin: 0;
-  display: flex;
-  flex-direction: column;
   padding: 0;
 }
 
 .task-item {
   display: flex;
   justify-content: space-between;
-  list-style: none;
-  align-items: center;
-  padding: 0.5rem;
   height: 50px;
   border-bottom: 1px solid lightgray;
+  padding: 0.5rem;
 }
 
-.form-container {
+.task-checkbox {
   display: flex;
-  gap: 1rem;
+  flex: 2;
+  align-items: center;
+}
+
+.label {
+  padding-left: 1rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+}
+
+.label:hover {
+  cursor: text;
+}
+
+.label:focus-visible {
+  outline: none;
 }
 
 .btn-container {
