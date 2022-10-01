@@ -18,8 +18,8 @@ const selectedItem = (e) => {
     if (e.target.className === 'label') {
       e.target.disabled = false;
     }
-    //  const iconChange = parentTarget.getElementsByTagName('i');
-    //  iconChange[0].className = 'fa-solid' + ' fa-trash';
+    const iconChange = parentTarget.getElementsByTagName('i');
+    iconChange[0].className = 'fa-solid fa-trash';
   }
 };
 
@@ -35,8 +35,8 @@ const editItem = (e) => {
   if (e.target.className === 'label') {
     e.target.disabled = true;
   }
-  //  const iconChange = parentTarget.getElementsByTagName('i');
-  //  iconChange[0].className = 'fa-solid' + ' fa-ellipsis-vertical';
+  const iconChange = parentTarget.getElementsByTagName('i');
+  iconChange[0].className = 'fa-solid fa-ellipsis-vertical';
   window.localStorage.setItem('tasks', JSON.stringify(library.taskArr));
 };
 
