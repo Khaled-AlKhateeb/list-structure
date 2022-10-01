@@ -8,7 +8,7 @@ const addBtn = document.getElementById('addBtn');
 const todoList = document.getElementById('todoList');
 
 addBtn.addEventListener('click', () => {getInputValues()})
-todoList.addEventListener('click', (e) => { selectedItem(e), removeItem(e) })
+todoList.addEventListener('click', (e) => { selectedItem(e); removeItem(e); })
 todoList.addEventListener('focusout', (e) => { editItem(e)})
 
 localStorageOnLoad();
